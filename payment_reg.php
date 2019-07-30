@@ -85,13 +85,14 @@
                                         <a href="#">
                                             <div class="logo_container d-flex flex-row align-items-start justify-content-start">
                                                 <div class="logo_image">
-                                                    <div><img src="images/logo.png" alt=""></div>
+                                                    <div><img src="images/lasulogo.PNG" alt=""></div>
                                                 </div>
                                                 <div class="logo_content">
+                                                    <div id="logo_text"><h3>Lagos State University, Ojo lagos.</h3>
+                                                    </div>
                                                     <div id="logo_text"><h3>2019 Annual Faculty of Social Sciences
                                                             Conference</h3></div>
-                                                    <div class="logo_sub" style="color: green"><strong><h4>14-17 | 11 |
-                                                                2019 Lagos, Nigeria</h4></strong></div>
+                                                    <!--<div class="logo_sub" style="color: green"><strong><h4>14-17 | 11 | 2019 Lagos, Nigeria</h4>  </strong></div>-->
                                                 </div>
                                             </div>
                                         </a>
@@ -107,8 +108,7 @@
                                                                style="color: #2b88cb"></i></a></li>
                                             <!--<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true" style="color: #2b88cb"></i></a></li>-->
                                             <!--<li><a href="#"><i class="fa fa-behance" aria-hidden="true" style="color: #2b88cb"></i></a></li>-->
-                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"
-                                                               style="color: #2b88cb"></i></a></li>
+                                            <!--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true" style="color: #2b88cb"></i></a></li>-->
                                         </ul>
                                     </div>
                                     <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -154,6 +154,14 @@
                                                     cursor: pointer;
                                                 }
 
+                                                .drophomereg {
+                                                    background-color: lawngreen;
+                                                    color: white;
+                                                    padding: 16px;
+                                                    font-size: 16px;
+                                                    border: none;
+                                                    cursor: pointer;
+                                                }
                                                 .dropdown {
                                                     position: relative;
                                                     display: inline-block;
@@ -189,7 +197,7 @@
                                             </style>
                                         </head>
                                         <div class="dropdown">
-                                            <button class="dropbtn"><a href="index.html">Home</a></button>
+                                            <button class="drophomereg"><a href="index.html">Home</a></button>
                                             <!--<div class="dropdown-content">-->
                                             <!--<a href="about.html">Welcome</a>-->
                                             <!--</div>-->
@@ -206,6 +214,7 @@
                                             <div class="dropdown-content">
                                                 <a href="conference.html">Conference Theme</a>
                                                 <a href="abstract_proposal.html"> Submit abstracts & proposals</a>
+                                                <a href="abstract.html"> Abstract</a>
                                                 <a href="guidelines.html">Guidelines for participation</a>
                                             </div>
                                         </div>
@@ -240,7 +249,7 @@
                                         </html>
 
                                     </div>
-                                    <div class="button header_button"><a href="#">Register Now!</a></div>
+                                    <div class="drophomereg"><a href="payment_reg.php">Register Now!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -262,6 +271,7 @@
                 </div>
             </div>
         </header>
+
 
         <div class="home_content_container">
             <div class="container">
