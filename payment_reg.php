@@ -243,7 +243,7 @@
                                         <div class="dropdown">
                                             <button class="dropbtn">Contact Us</button>
                                             <div class="dropdown-content">
-                                                <a href="contact.html">Contact us</a>
+                                                <a href="contact.php">Contact us</a>
                                             </div>
                                         </div>
                                         </html>

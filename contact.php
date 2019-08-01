@@ -1,8 +1,22 @@
+<?php
+if (isset($_POST["SubmitBtn"])) {
+
+    $to = "tobainocycle@gmail.com";
+    $subject = "Contact mail";
+    $from = $_POST["email"];
+    $msg = $_POST["msg"];
+    $headers = "From: $from";
+
+    mail($to, $subject, $msg, $headers);
+    echo "Email successfully sent.";
+    header("Location: thankyou.html");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" href="images/lasulogo.PNG">
-	<title>Contact</title>
+    <link rel="icon" href="images/lasulogo.PNG">
+    <title>Contact</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Conference project">
@@ -19,51 +33,51 @@
 
 <div class="super_container">
 
-	<!-- Menu -->
+    <!-- Menu -->
 
-	<!--<div class="menu trans_500">-->
-	<!--<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">-->
-	<!--<div class="menu_close_container"><div class="menu_close"></div></div>-->
-	<!--<div class="logo menu_logo">-->
-	<!--<a href="#">-->
-	<!--<div class="logo_container d-flex flex-row align-items-start justify-content-start">-->
-	<!--<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>-->
-	<!--<div class="logo_content">-->
-	<!--<div class="logo_text logo_text_not_ie">The Conference</div>-->
-	<!--<div class="logo_sub">August 25, 2018 - Miami Marina Bay</div>-->
-	<!--</div>-->
-	<!--</div>-->
-	<!--</a>-->
-	<!--</div>-->
-	<!--<ul>-->
-	<!--<li class="menu_item"><a href="index.html">Home</a></li>-->
-	<!--<li class="menu_item"><a href="#">About us</a></li>-->
-	<!--<li class="menu_item"><a href="#">Speakers</a></li>-->
-	<!--<li class="menu_item"><a href="#">Tickets</a></li>-->
-	<!--<li class="menu_item"><a href="conference.html">News</a></li>-->
-	<!--<li class="menu_item"><a href="contact.html">Contact</a></li>-->
-	<!--</ul>-->
-	<!--</div>-->
-	<!--<div class="menu_social">-->
-	<!--<div class="menu_social_title">Follow uf on Social Media</div>-->
-	<!--<ul>-->
-	<!--<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
-	<!--<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
-	<!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-	<!--<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
-	<!--<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>-->
-	<!--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>-->
-	<!--</ul>-->
-	<!--</div>-->
-	<!--</div>-->
+    <!--<div class="menu trans_500">-->
+    <!--<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">-->
+    <!--<div class="menu_close_container"><div class="menu_close"></div></div>-->
+    <!--<div class="logo menu_logo">-->
+    <!--<a href="#">-->
+    <!--<div class="logo_container d-flex flex-row align-items-start justify-content-start">-->
+    <!--<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>-->
+    <!--<div class="logo_content">-->
+    <!--<div class="logo_text logo_text_not_ie">The Conference</div>-->
+    <!--<div class="logo_sub">August 25, 2018 - Miami Marina Bay</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<ul>-->
+    <!--<li class="menu_item"><a href="index.html">Home</a></li>-->
+    <!--<li class="menu_item"><a href="#">About us</a></li>-->
+    <!--<li class="menu_item"><a href="#">Speakers</a></li>-->
+    <!--<li class="menu_item"><a href="#">Tickets</a></li>-->
+    <!--<li class="menu_item"><a href="conference.html">News</a></li>-->
+    <!--<li class="menu_item"><a href="contact.php">Contact</a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="menu_social">-->
+    <!--<div class="menu_social_title">Follow uf on Social Media</div>-->
+    <!--<ul>-->
+    <!--<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
+    <!--<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+    <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+    <!--<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
+    <!--<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>-->
+    <!--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
 
-	<!-- Home -->
+    <!-- Home -->
 
-	<div class="home">
-		<!-- <div class="home_background" style="background-image: url(images/index.jpg)"></div> -->
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/pricing.jpg" data-speed="0.8"></div>
+    <div class="home">
+        <!-- <div class="home_background" style="background-image: url(images/index.jpg)"></div> -->
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/pricing.jpg" data-speed="0.8"></div>
 
-		<!-- Header -->
+        <!-- Header -->
 
         <header class="header" id="header">
             <div>
@@ -82,7 +96,7 @@
                                                     <div id="logo_text"><h3>Lagos State University, Ojo lagos.</h3>
                                                     </div>
                                                     <div id="logo_text"><h3>2019 Annual Faculty of Social Sciences
-                                                        Conference</h3></div>
+                                                            Conference</h3></div>
                                                     <!--<div class="logo_sub" style="color: green"><strong><h4>14-17 | 11 | 2019 Lagos, Nigeria</h4>  </strong></div>-->
                                                 </div>
                                             </div>
@@ -123,7 +137,7 @@
                                         <!--<li><a href="registration.html">Registration</a></li>-->
                                         <!--<li><a href="general_info.html">Destination</a></li>-->
                                         <!--<li><a href="sponsor.html">Sponsors & Exhibition</a></li>-->
-                                        <!--<li><a href="contact.html">Contact</a></li>-->
+                                        <!--<li><a href="contact.php">Contact</a></li>-->
 
                                         <!--</ul>-->
                                         <!--</nav>-->
@@ -235,7 +249,7 @@
                                         <div class="dropdown">
                                             <button class="dropbtn">Contact Us</button>
                                             <div class="dropdown-content">
-                                                <a href="contact.html">Contact us</a>
+                                                <a href="contact.php">Contact us</a>
                                             </div>
                                         </div>
                                         </html>
@@ -266,96 +280,112 @@
 
 
         <div class="home_content_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="home_content d-flex flex-row align-items-end justify-content-start">
-							<div class="current_page">Contact</div>
-							<div class="breadcrumbs ml-auto">
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li>Contact</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="home_content d-flex flex-row align-items-end justify-content-start">
+                            <div class="current_page">Contact</div>
+                            <div class="breadcrumbs ml-auto">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li>Contact</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- Contact -->
+    <!-- Contact -->
 
-	<div class="contact">
-		<div class="contact_map_background">
+    <div class="contact">
+        <div class="contact_map_background">
 
-			<!-- Contact Map -->
-			<div class="contact_map">
+            <!-- Contact Map -->
+            <div class="contact_map">
 
-				<!-- Google Map -->
-				<div class="map">
-					<div id="google_map" class="google_map">
-						<div class="map_container">
-							<div id="map"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <!-- Google Map -->
+                <div class="map">
+                    <div id="google_map" class="google_map">
+                        <div class="map_container">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="contact_form_container">
-						<div class="contact_form_title">Get in touch</div>
-						<form action="#" class="contact_form" id="contact_form">
-							<input type="text" class="contact_input" placeholder="Name" required="required">
-							<input type="email" class="contact_input" placeholder="E-mail" required="required">
-							<input type="text" class="contact_input" placeholder="Subject" required="required">
-							<textarea name="contact_textarea" id="contact_textarea" class="contact_textarea contact_input" placeholder="Message" required="required"></textarea>
-							<button class="button contact_button"><span>Send Message</span></button>
-						</form>
-					</div>
-				</div>
-				<div class="col-lg-5 offset-lg-1">
-					<div class="contact_info_container">
-						<div>
-							<a href="#">
-								<div class="logo_container d-flex flex-row align-items-start justify-content-start">
-									<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
-									<div class="logo_content">
-										<div id="logo_text" class="logo_text logo_text_not_ie">2019 Annual Faculty of Social Sciences Conference</div>
-										<div class="logo_sub">November 14 - 17, 2019 </div>
-									</div>
-								</div>
-							</a>	
-						</div>
-						<div class="contact_info_list_container">
-							<ul class="contact_info_list">
-								<li class="d-flex flex-row align-items-start justify-content-start">
-									<div><div class="contact_info_icon text-center"><img src="images/contact_1.png" alt=""></div></div>
-									<div class="contact_info_text">Lagos State University, Lagos Nigeria.</div>
-								</li>
-								<li class="d-flex flex-row align-items-start justify-content-start">
-									<div><div class="contact_info_icon text-center"><img src="images/contact_2.png" alt=""></div></div>
-									<div class="contact_info_text">08023046011</div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact_form_container">
+                        <div class="contact_form_title">Get in touch by sending us a feedback</div>
+                        <form id="emailForm" name="emailForm" method="post" action="">
+                            <table width="100%" border="0" align="center" cellpadding="4" cellspacing="1">
+
+                                <tr>
+                                    <td>E-mail :</td>
+                                    <td><input name="email" type="text" id="email" size="45"></td>
+                                </tr>
+                                <td>&nbsp;</td>
+                                <tr>
+                                    <td>Message :</td>
+                                    <td>
+                                        <textarea name="msg" cols="45" rows="8" id="msg"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><input name="SubmitBtn" type="submit" id="SubmitBtn" value="Submit">
+                                        <button type="reset">Reset</button>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="contact_info_container">
+                        <div>
+                            <a href="#">
+                                <div class="logo_container d-flex flex-row align-items-start justify-content-start">
+                                    <div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
+                                    <div class="logo_content">
+                                        <div id="logo_text" class="logo_text logo_text_not_ie">2019 Annual Faculty of Social Sciences Conference</div>
+                                        <div class="logo_sub">November 14 - 17, 2019 </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact_info_list_container">
+                            <ul class="contact_info_list">
+                                <li class="d-flex flex-row align-items-start justify-content-start">
+                                    <div><div class="contact_info_icon text-center"><img src="images/contact_1.png" alt=""></div></div>
+                                    <div class="contact_info_text">Lagos State University, Lagos Nigeria.</div>
+                                </li>
+                                <li class="d-flex flex-row align-items-start justify-content-start">
+                                    <div><div class="contact_info_icon text-center"><img src="images/contact_2.png" alt=""></div></div>
+                                    <div class="contact_info_text">08023046011</div>
                                     <div class="contact_info_text">07045999193</div>
 
                                 </li>
-								<li class="d-flex flex-row align-items-start justify-content-start">
-									<div><div class="contact_info_icon text-center"><img src="images/contact_3.png" alt=""></div></div>
-									<div class="contact_info_text">fossconference@lasu.edu.ng</div>
-								</li>
-							</ul>
-						</div>
-						<div class="contact_info_pin"><div></div></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                <li class="d-flex flex-row align-items-start justify-content-start">
+                                    <div><div class="contact_info_icon text-center"><img src="images/contact_3.png" alt=""></div></div>
+                                    <div class="contact_info_text">fossconference@lasu.edu.ng</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact_info_pin"><div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- Footer -->
+    <!-- Footer -->
 
     <footer class="footer">
         <div class="footer_content">
@@ -443,7 +473,7 @@
                                 <div class="footer_extra_right ml-lg-auto text-lg-right">
                                     <div class="footer_extra_links">
                                         <!--<ul>-->
-                                        <!--<li><a href="contact.html">Contact us</a></li>-->
+                                        <!--<li><a href="contact.php">Contact us</a></li>-->
                                         <!--<li><a href="#">Sitemap</a></li>-->
                                         <!--<li><a href="#">Privacy</a></li>-->
                                         <!--</ul>-->
@@ -464,7 +494,7 @@
             </div>
         </div>
     </footer>
-		
+
 </div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
