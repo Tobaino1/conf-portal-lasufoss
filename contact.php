@@ -1,17 +1,17 @@
 <?php
-if (isset($_POST["SubmitBtn"])) {
-
-    $to = "tobainocycle@gmail.com";
-    $subject = "Contact mail";
-    $from = $_POST["email"];
-    $msg = $_POST["msg"];
-    $headers = "From: $from";
-
-    mail($to, $subject, $msg, $headers);
-    echo "Email successfully sent.";
-    header("Location: thankyou.html");
-}
-?>
+//if (isset($_POST["SubmitBtn"])) {
+//
+//    $to = "tobainocycle@gmail.com";
+//    $subject = "Contact mail";
+//    $from = $_POST["email"];
+//    $msg = $_POST["msg"];
+//    $headers = "From: $from";
+//
+//    mail($to, $subject, $msg, $headers);
+//    echo "Email successfully sent.";
+//    header("Location: thankyou.html");
+//}
+//?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,19 +104,23 @@ if (isset($_POST["SubmitBtn"])) {
                                     </div>
                                     <div class="header_social ml-auto">
                                         <ul>
-                                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"
-                                                               style="color: #2b88cb"></i></a></li>
+                                            <li><a href="https://www.instagram.com/lasufossconfer1/"><i
+                                                            class="fa fa-instagram" aria-hidden="true"
+                                                            style="color: #2b88cb"></i></a></li>
                                             <!--<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true" style="color: #2b88cb"></i></a></li>-->
                                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"
                                                                style="color: #2b88cb"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"
-                                                               style="color: #2b88cb"></i></a></li>
+                                            <li><a href="https://twitter.com/lasufossconfer1"><i class="fa fa-twitter"
+                                                                                                 aria-hidden="true"
+                                                                                                 style="color: #2b88cb"></i></a>
+                                            </li>
                                             <!--<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true" style="color: #2b88cb"></i></a></li>-->
                                             <!--<li><a href="#"><i class="fa fa-behance" aria-hidden="true" style="color: #2b88cb"></i></a></li>-->
                                             <!--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true" style="color: #2b88cb"></i></a></li>-->
                                         </ul>
                                     </div>
                                     <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                                    -
                                 </div>
                             </div>
                         </div>
@@ -322,18 +326,22 @@ if (isset($_POST["SubmitBtn"])) {
                 <div class="col-lg-6">
                     <div class="contact_form_container">
                         <div class="contact_form_title">Get in touch by sending us a feedback</div>
-                        <form id="emailForm" name="emailForm" method="post" action="">
+                        <form id="emailForm" name="emailForm" method="post" action="contact_mail.php">
                             <table width="100%" border="0" align="center" cellpadding="4" cellspacing="1">
-
+                                <tr>
+                                    <td>Name :</td>
+                                    <td><input name="first_name" type="text" id="first_name" size="45"></td>
+                                </tr>
+                                <td>&nbsp;</td>
                                 <tr>
                                     <td>E-mail :</td>
-                                    <td><input name="email" type="text" id="email" size="45"></td>
+                                    <td><input name="email_address" type="text" id="email_address" size="45"></td>
                                 </tr>
                                 <td>&nbsp;</td>
                                 <tr>
                                     <td>Message :</td>
                                     <td>
-                                        <textarea name="msg" cols="45" rows="8" id="msg"></textarea>
+                                        <textarea name="comments" cols="45" rows="8" id="comments"></textarea>
                                     </td>
                                 </tr>
                                 <tr>
