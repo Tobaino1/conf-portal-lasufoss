@@ -1,19 +1,28 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Oyekan Oluwatobi
+ * Date: 8/28/2019
+ * Time: 1:30 PM
+ */
+?>
+<?php
 /*
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
 */
 $webmaster_email = "tobainocycle@gmail.com";
-//$webmaster_email = "fossconference@lasu.edu.ng";
-$webmaster_email = "medicollectionsservice@gmail.com";
+$webmaster_email = "fatai.ogundele@lasu.edu.ng";
+//subtheme b email address
+
 
 /*
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "contact.php";
+$feedback_page = "subthemeb.html";
 $error_page = "error_message.html";
-$thankyou_page = "thank_you_contact.html";
+$thankyou_page = "thank_you_subthemeabcde.html";
 
 /*
 This next bit loads the form field data into variables.
@@ -23,9 +32,9 @@ $email_address = $_REQUEST['email_address'];
 $comments = $_REQUEST['comments'];
 $first_name = $_REQUEST['first_name'];
 $msg =
-    "Name : " . $first_name . "\r\n" .
+    "Name of Author: " . $first_name . "\r\n" .
     "Email: " . $email_address . "\r\n" .
-    "Feedback message: " . $comments;
+    "Abstract: " . $comments;
 
 /*
 The following function checks for email injection.
@@ -65,8 +74,9 @@ elseif (isInjected($email_address) || isInjected($first_name) || isInjected($com
 } // If we passed all previous tests, send the email then redirect to the thank you page.
 else {
 
-    mail("$webmaster_email", "Feedback", $msg);
+    mail("$webmaster_email", "Abstract", $msg);
 
     header("Location: $thankyou_page");
 }
 ?>
+

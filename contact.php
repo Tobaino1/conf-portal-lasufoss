@@ -223,8 +223,8 @@
                                             <button class="dropbtn">Program</button>
                                             <div class="dropdown-content">
                                                 <a href="conference.html">Conference Theme</a>
-                                                <a href="abstract_proposal.html"> Abstracts & proposals</a>
-                                                <a href="abstract.html"> Submit Abstract</a>
+                                                <a href="abstract_proposal.html"> Abstracts & Proposals (Sub themes)</a>
+                                                <a href="fullpaper.html"> Submit Full Paper</a>
                                                 <a href="guidelines.html">Guidelines for participation</a>
                                             </div>
                                         </div>
@@ -363,7 +363,7 @@
                                     <div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
                                     <div class="logo_content">
                                         <div id="logo_text" class="logo_text logo_text_not_ie">2019 Annual Faculty of Social Sciences Conference</div>
-                                        <div class="logo_sub">November 14 - 17, 2019 </div>
+                                        <div class="logo_sub">November 17th - 20th, 2019</div>
                                     </div>
                                 </div>
                             </a>
@@ -409,7 +409,7 @@
                                         <div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
                                         <div class="logo_content">
                                             <div><h4> 2019 Annual Faculty of Social Sciences Conference</h4> </div>
-                                            <div class="logo_sub">14-17 | 11 | 2019 Lagos, Nigeria</div>
+                                            <div class="logo_sub">17-20 | 11 | 2019 Lagos, Nigeria</div>
                                         </div>
                                     </div>
                                 </a>

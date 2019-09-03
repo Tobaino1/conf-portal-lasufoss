@@ -216,8 +216,8 @@
                                             <button class="dropbtn">Program</button>
                                             <div class="dropdown-content">
                                                 <a href="conference.html">Conference Theme</a>
-                                                <a href="abstract_proposal.html"> Abstracts & proposals</a>
-                                                <a href="abstract.html"> Submit Abstract</a>
+                                                <a href="abstract_proposal.html"> Abstracts & Proposals (Sub themes)</a>
+                                                <a href="fullpaper.html"> Submit Full Paper</a>
                                                 <a href="guidelines.html">Guidelines for participation</a>
                                             </div>
                                         </div>
@@ -413,19 +413,19 @@
                                         function payWithPaystack() {
                                             var handler = PaystackPop.setup({
                                                 key: 'pk_test_48a99439decd49f4c66d98c3fc2b0955f7e29866',
-                                                email: 'medicollectionsservice@gmail.com',
+                                                email: 'fossconference@lasu.edu.ng',
                                                 amount: 200200,
                                                 currency: "NGN",
                                                 // ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-                                                firstname: 'Stephen',
-                                                lastname: 'King',
+                                                firstname: 'Lasu Social Science',
+                                                lastname: 'conference',
                                                 // label: "Optional string that replaces customer email"
                                                 metadata: {
                                                     custom_fields: [
                                                         {
                                                             display_name: "Mobile Number",
                                                             variable_name: "mobile_number",
-                                                            value: "+2348012345678"
+                                                            value: "+2347045999193"
                                                         }
                                                     ]
                                                 },
@@ -461,19 +461,19 @@
                                         function payWithPaystack() {
                                             var handler = PaystackPop.setup({
                                                 key: 'pk_test_48a99439decd49f4c66d98c3fc2b0955f7e29866',
-                                                email: 'medicollectionsservice@gmail.com',
+                                                email: 'fossconference@lasu.edu.ng',
                                                 amount: 362000,
                                                 currency: "NGN",
                                                 // ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-                                                firstname: 'Stephen',
-                                                lastname: 'King',
+                                                firstname: 'Lasu Social Science',
+                                                lastname: 'conference',
                                                 // label: "Optional string that replaces customer email"
                                                 metadata: {
                                                     custom_fields: [
                                                         {
                                                             display_name: "Mobile Number",
                                                             variable_name: "mobile_number",
-                                                            value: "+2348012345678"
+                                                            value: "+2347045999193"
                                                         }
                                                     ]
                                                 },
@@ -509,19 +509,19 @@
                                         function payWithPaystack() {
                                             var handler = PaystackPop.setup({
                                                 key: 'pk_test_48a99439decd49f4c66d98c3fc2b0955f7e29866',
-                                                email: 'medicollectionsservice@gmail.com',
+                                                email: 'fossconference@lasu.edu.ng',
                                                 amount: 100200,
                                                 currency: "NGN",
                                                 // ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-                                                firstname: 'Stephen',
-                                                lastname: 'King',
+                                                firstname: 'Lasu Social Science',
+                                                lastname: 'conference',
                                                 // label: "Optional string that replaces customer email"
                                                 metadata: {
                                                     custom_fields: [
                                                         {
                                                             display_name: "Mobile Number",
                                                             variable_name: "mobile_number",
-                                                            value: "+2348012345678"
+                                                            value: "+2347045999193"
                                                         }
                                                     ]
                                                 },
