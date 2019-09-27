@@ -389,155 +389,31 @@
                             <!--                                    </a>-->
                             <!--                                </div>-->
                             <!--                            </div>-->
-                            <div><img src="images/paystack4.png" align="center" width="" height=""
-                                      alt="paystack banner">
+                            <div><img src="images/payment%20logo.PNG" align="center" width="230" height="60"
+                                      alt="payment banner">
+                                <img src="images/remita.jpeg" align="center" width="150" height="50"
+                                     alt="payment banner">
                                 <div class="news_body">
-                                    <div class="news_title"><a href="#">Payment for all kinds of registration
-                                            categories </a></div>
+                                    <!--                                    <div class="news_title"><a href="#">Payment for all kinds of registration-->
+                                    <!--                                            categories </a></div>-->
                                     <form>
-                                        <script src="https://js.paystack.co/v1/inline.js"></script>
-                                        <p><h4 style="color: cornflowerblue"> BREAKDOWN FOR LOCAL PARTICIPANT
-                                            REGISTRATION
-                                        </h4></p>
-                                        <p style="color:black"> Registration fee #20,000</p>
-                                        <p style="color:black"> Service charge / convenience fee #200</p>
-                                        <p style="color:black"> Total = #20,200</p>
-                                        <p><h4 style="color: cornflowerblue"> Use the button below to pay for Local
-                                            Participant registration </h4></p>
-                                        <button type="button" onclick="payWithPaystack()" style="color: #2b88cb"> Pay
-                                            for Local Participant
-                                        </button>
+                                        <p><h4 style="color: blue"> REGISTRATION FEE FOR LOCAL PARTICIPANTS </h4></p>
+                                        <p><h4 style="color: red"> #20,000 </h4></p>
+
+                                        <p><h4 style="color: blue"> REGISTRATION FEE FOR INTERNATIONAL PARTICIPANTS
+                                            REGISTRATION </h4></p>
+                                        <p><h4 style="color: red"> $100 </h4></p>
+
+                                        <p><h4 style="color: blue"> REGISTRATION FEE FOR STUDENT PARTICIPANTS
+                                            REGISTRATION </h4></p>
+                                        <p><h4 style="color: red"> #10,000 </h4></p>
+
                                     </form>
-
-                                    <script>
-                                        function payWithPaystack() {
-                                            var handler = PaystackPop.setup({
-                                                key: 'pk_test_48a99439decd49f4c66d98c3fc2b0955f7e29866',
-                                                email: 'fossconference@lasu.edu.ng',
-                                                amount: 200200,
-                                                currency: "NGN",
-                                                // ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-                                                firstname: 'Lasu Social Science',
-                                                lastname: 'conference',
-                                                // label: "Optional string that replaces customer email"
-                                                metadata: {
-                                                    custom_fields: [
-                                                        {
-                                                            display_name: "Mobile Number",
-                                                            variable_name: "mobile_number",
-                                                            value: "+2347045999193"
-                                                        }
-                                                    ]
-                                                },
-                                                callback: function (response) {
-                                                    alert('success. transaction ref is ' + response.reference);
-                                                },
-                                                onClose: function () {
-                                                    alert('window closed');
-                                                }
-
-                                            });
-                                            handler.openIframe();
-                                        }
-
-                                    </script>
-                                    <br><br><br>
-                                    <form>
-                                        <script src="https://js.paystack.co/v1/inline.js"></script>
-                                        <p><h4 style="color: cornflowerblue"> BREAKDOWN FOR INTERNATIONAL PARTICIPANT
-                                            REGISTRATION
-                                        </h4></p>
-                                        <p style="color:black"> Registration fee $100</p>
-                                        <p style="color:black"> Service charge / convenience fee $1</p>
-                                        <p style="color:black"> Total = $101</p>
-                                        <p><h4 style="color: cornflowerblue"> Use the button below to pay for
-                                            International Participant registration </h4></p>
-                                        <button type="button" onclick="payWithPaystack()" style="color: #2b88cb"> Pay
-                                            for Local Participant
-                                        </button>
-                                    </form>
-
-                                    <script>
-                                        function payWithPaystack() {
-                                            var handler = PaystackPop.setup({
-                                                key: 'pk_test_48a99439decd49f4c66d98c3fc2b0955f7e29866',
-                                                email: 'fossconference@lasu.edu.ng',
-                                                amount: 362000,
-                                                currency: "NGN",
-                                                // ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-                                                firstname: 'Lasu Social Science',
-                                                lastname: 'conference',
-                                                // label: "Optional string that replaces customer email"
-                                                metadata: {
-                                                    custom_fields: [
-                                                        {
-                                                            display_name: "Mobile Number",
-                                                            variable_name: "mobile_number",
-                                                            value: "+2347045999193"
-                                                        }
-                                                    ]
-                                                },
-                                                callback: function (response) {
-                                                    alert('success. transaction ref is ' + response.reference);
-                                                },
-                                                onClose: function () {
-                                                    alert('window closed');
-                                                }
-
-                                            });
-                                            handler.openIframe();
-                                        }
-
-                                    </script>
-                                    <br><br><br>
-                                    <form>
-                                        <script src="https://js.paystack.co/v1/inline.js"></script>
-                                        <p><h4 style="color: cornflowerblue"> BREAKDOWN FOR STUDENT PARTICIPANT
-                                            REGISTRATION
-                                        </h4></p>
-                                        <p style="color:black"> Registration fee #10,000</p>
-                                        <p style="color:black"> Service charge / convenience fee #200</p>
-                                        <p style="color:black"> Total = #10,200</p>
-                                        <p><h4 style="color: cornflowerblue"> Use the button below to pay for Local
-                                            Participant registration </h4></p>
-                                        <button type="button" onclick="payWithPaystack()" style="color: #2b88cb"> Pay
-                                            for Student Participant
-                                        </button>
-                                    </form>
-
-                                    <script>
-                                        function payWithPaystack() {
-                                            var handler = PaystackPop.setup({
-                                                key: 'pk_test_48a99439decd49f4c66d98c3fc2b0955f7e29866',
-                                                email: 'fossconference@lasu.edu.ng',
-                                                amount: 100200,
-                                                currency: "NGN",
-                                                // ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-                                                firstname: 'Lasu Social Science',
-                                                lastname: 'conference',
-                                                // label: "Optional string that replaces customer email"
-                                                metadata: {
-                                                    custom_fields: [
-                                                        {
-                                                            display_name: "Mobile Number",
-                                                            variable_name: "mobile_number",
-                                                            value: "+2347045999193"
-                                                        }
-                                                    ]
-                                                },
-                                                callback: function (response) {
-                                                    alert('success. transaction ref is ' + response.reference);
-                                                },
-                                                onClose: function () {
-                                                    alert('window closed');
-                                                }
-
-                                            });
-                                            handler.openIframe();
-                                        }
-
-                                    </script>
-
+                                    <br><Br>
+                                    <h4 style="color: blue"> Use the link (Pay Now!) below to proceed to payment
+                                        platform</h4>
+                                    <a href="http://www.lasu.edu.ng/tsa/epayment/default_new_misc.php"><strong
+                                                style="color: red"><h3>PAY NOW!</h3></strong> </a>
 
                                 </div>
                             </div>
@@ -740,7 +616,7 @@
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             |||||||||||||||||||||||||||||||||||||||||||||||||| design<i class="fa fa-heart-o"
                                                                                         aria-hidden="true"></i> by <a
-                                    href="https://Twitter.com/@tobainocycle" target="_blank">Tobaino</a>
+                            <a href="https://www.sparklegrid.tech" target="_blank">Sparklegrid (Tobaino)</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
                     </div>
                 </div>
