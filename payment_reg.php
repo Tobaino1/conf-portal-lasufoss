@@ -401,11 +401,11 @@
                                         <p><h4 style="color: red"> #20,000 </h4></p>
 
                                         <p><h4 style="color: blue"> REGISTRATION FEE FOR INTERNATIONAL PARTICIPANTS
-                                            REGISTRATION </h4></p>
+                                        </h4></p>
                                         <p><h4 style="color: red"> $100 </h4></p>
 
                                         <p><h4 style="color: blue"> REGISTRATION FEE FOR STUDENT PARTICIPANTS
-                                            REGISTRATION </h4></p>
+                                        </h4></p>
                                         <p><h4 style="color: red"> #10,000 </h4></p>
 
                                     </form>

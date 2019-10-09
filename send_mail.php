@@ -3,11 +3,7 @@
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
 */
-$webmaster_email = "tobainocycle@gmail.com";
-//$webmaster_email = "oyekan.oluwatobi.adebayo@gmail.com";
-//$webmaster_email = "medicollectionservices@gmail.com";
-//$webmaster_email = "oyekan@unlimitedinsight.com.ng";
-//$webmaster_email = "tobainocycle@yahoo.com";
+
 //
 //
 //$webmaster_email = "olarewaju.ogunlana@lasu.edu.ng";
@@ -75,7 +71,10 @@ elseif (isInjected($email_address) || isInjected($first_name) || isInjected($com
 } // If we passed all previous tests, send the email then redirect to the thank you page.
 else {
 
-    mail("$webmaster_email", "Full Paper", $msg);
+    mail("tobainocycle@yahoo.com, tobainocycle@gmail.com, tobi@lasufoss.com", "Full Paper", $msg);
+
+//    mail("olarewaju.ogunlana@lasufoss.com, fatai.ogundele@lasufoss.com, abdul-wasi.moshood@lasufoss.com, temitayo.adewuyi@lasufoss.com, jubril.jawando@lasufoss.com", "Full Paper", $msg);
+
 
     header("Location: $thankyou_page");
 }
